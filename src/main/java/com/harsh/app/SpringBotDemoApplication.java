@@ -2,6 +2,7 @@ package com.harsh.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 import java.sql.SQLOutput;
 
@@ -9,8 +10,13 @@ import java.sql.SQLOutput;
 public class SpringBotDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBotDemoApplication.class, args);
-		System.out.println("Hello World");
+		ApplicationContext context =SpringApplication.run(SpringBotDemoApplication.class, args);
+
+		Alien obj=context.getBean(Alien.class);
+		obj.code();
+
+		Alien obj1=context.getBean(Alien.class);
+		obj1.code();
 	}
 
 }
