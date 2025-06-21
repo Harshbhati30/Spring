@@ -13,15 +13,7 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");  //With this line we created the container and in double qotes it has containers configuration file address
         Alien a= (Alien) context.getBean("alien");
-        System.out.println(a.getAge());
         a.code();
 
-//
-//        Alien a1= (Alien) context.getBean("alien");
-//        System.out.println(a1.age);
-////        a1.code();
-//
-//        Laptop l= (Laptop) context.getBean("laptop");
-//        l.compile();
     }
 }
