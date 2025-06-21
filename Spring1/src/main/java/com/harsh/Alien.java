@@ -6,6 +6,11 @@ public class Alien {
     private int age;
     private Laptop lap1;
 
+    public Alien(int age, Laptop lap1) {
+        this.age = age;
+        this.lap1 = lap1;
+    }
+
     public int getAge() {
         return age;
     }
