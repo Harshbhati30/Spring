@@ -4,7 +4,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien"  class="com.harsh.Alien" scope="prototype"></bean>
+    <bean id="alien"  class="com.harsh.Alien" scope="prototype">
+        <property name="age" value="21"></property>
+    </bean>
 
     <bean id="laptop"  class="com.harsh.Laptop"></bean>
 
